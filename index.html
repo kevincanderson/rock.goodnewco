@@ -55,23 +55,31 @@
         <div>
             <h2>Welcome to the family!</h2>
             <p>We would love to rejoice with you, if you could share your email address and a picture of the rock. That would be a blessing to us. Praise God.</p>
-            <hr>
-<form name="rock" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Attach: <input name="image" type="file">
-    </input></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-
+            <form
+              name="contact"
+              method="POST"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
+              <p class="hidden">
+                <label>
+                  Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+              </p>
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Attach: <input name="image" type="file">
+                </input></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
         </div>
     </section>
 </body>
