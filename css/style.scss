@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'AddingtonCF';
+    src: url('AddingtonCF-Regular.woff') format('woff'),
+    url('AddingtonCF-Regular.woff2') format('woff2')
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,7 @@ body {
     padding: 0;
     overflow: hidden;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'AddingtonCF';
     text-align: center;
     font-size: 20px;
     color: #111;
@@ -73,4 +79,9 @@ button {
 
 .hidden {
     display: none;
+}
+
+.social-share {
+    display: inline;
+    font-size: .75rem;
 }
